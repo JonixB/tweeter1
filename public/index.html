@@ -1,90 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Meta Information -->
-    <title>Tweeter - Home Page</title>
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
+<head>
+  <!-- Meta Information -->
+  <title>Tweeter - Home Page</title>
 
-    <!-- External fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
-    
-    <!-- Font-awesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- External CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    type="text/css" />
 
-    <!-- App CSS -->
-    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+  <!-- External fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap"
+    rel="stylesheet">
 
-    <!-- Nav CSS -->
-    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+  <!-- Font-awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Header CSS -->
-    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+  <!-- App CSS -->
+  <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
 
-    <!-- New-tweet CSS -->
-    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+  <!-- Nav CSS -->
+  <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
 
-    <!-- Tweet CSS -->
-    <link rel="stylesheet" href="/styles/tweet.css" type="text/css" />
+  <!-- Header CSS -->
+  <link rel="stylesheet" href="/styles/header.css" type="text/css" />
 
-    <!-- External JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- New-tweet CSS -->
+  <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
-    <!-- App JS -->
-    <script type="text/javascript" src="/scripts/client.js"></script>
+  <!-- Tweet CSS -->
+  <link rel="stylesheet" href="/styles/tweet.css" type="text/css" />
 
-    <!-- Character counter script-->
-    <script src="/scripts/composer-char-counter.js" type="text/javascript"></script>
-  </head>
+  <!-- External JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-  <body>
-    <!-- Top nav bar (fixed) -->
-    <nav>
-      <span>tweeter</span>
+  <!-- App JS -->
+  <script type="text/javascript" src="/scripts/client.js"></script>
 
-      <div class="write-new"> 
-        <p><b>Write</b> a new tweet</p>
-        <i class="fa-solid fa-angles-down"></i>
-      </div>
-    </nav>
+  <!-- Character counter script-->
+  <script src="/scripts/composer-char-counter.js" type="text/javascript"></script>
+</head>
 
-    <header class="new-tweet" >
-      <div>
-          <img src="/images/profile-hex.png"> 
-      </div>
+<body>
+  <!-- Top nav bar (fixed) -->
+  <nav>
+    <span>tweeter</span>
 
-      <div>
-          <h2>Nikko Bansil</h2>
-      </div>
-    </header>
+    <div class="write-new">
+      <p><b>Write</b> a new tweet</p>
+      <i class="fa-solid fa-angles-down"></i>
+    </div>
+  </nav>
 
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-      <section class="new-tweet">
-        <form method="post" action="/tweets/">
-          <label for="tweet-text">What are you humming about?</label>
-          <textarea name="text" id="tweet-text" rows="2" cols="150"></textarea>
-          <div class="button">
-            <button type="submit" id="button">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
-          </div>
-        </form>
-      </section>
+  <header class="new-tweet">
+    <div>
+      <img src="/images/profile-hex.png">
+    </div>
 
-      <article class="tweet">
-        <header class="tweet-header">
-          test
-        </header>
+    <div>
+      <h2>Nikko Bansil</h2>
+    </div>
+  </header>
 
-        <body>
-          test
-        </body>
+  <!-- Page-specific (main) content here -->
+  <main class="container">
+    <section class="new-tweet">
+      <form method="post" action="/tweets/">
+        <label for="tweet-text">What are you humming about?</label>
+        <textarea name="text" id="tweet-text" rows="2" cols="150"></textarea>
+        <div class="button">
+          <button type="submit" id="button">Tweet</button>
+          <output name="counter" class="counter" for="tweet-text">140</output>
+        </div>
+      </form>
+    </section>
 
-        <footer>
+    <article class="tweet">
+      <header class="tweet-header">
+        <img class="user-avatar" src="images/pikachu.png" alt="Pikachu">
+        <div>
+          <h4>Pick A Choo</h4>
+          <h4 id="username">@pikachu_42</h4>
+        </div>
+      </header>
+
+      <body>
         test
-        </footer>
-      </article>
-    </main>
-  </body>
+      </body>
+
+      <footer>
+        test
+      </footer>
+    </article>
+  </main>
+</body>
+
 </html>
