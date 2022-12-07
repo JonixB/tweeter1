@@ -1,4 +1,33 @@
-article.tweet header{
-  height: 20px;
+article.tweet {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 90%;
   border: 5px solid grey;
+}
+
+article > header > div {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 88%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-end;
+}
+
+.tweet-header {
+  display: flex;
+}
+
+.user-avatar {
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 50px;
+  width: 50px;
+}
+
+#username {
+  color: gray
 }
