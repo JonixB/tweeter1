@@ -1,0 +1,26 @@
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+#tweet-text {
+  border: none;
+  border-bottom: 5px solid gray;
+  background-color: transparent;
+  resize: none;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.button {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'bungee';
+}
+
+#button {
+  border: none;
+  background-color: #4056A1;
+  color: #FFFFFF;
+}
