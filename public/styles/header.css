@@ -9,7 +9,3 @@ header {
   align-items: center;
   color: white;
 }
-
-main > section > footer > div {
-  display: flex;
-}
