@@ -10,7 +10,8 @@ article.tweet {
 article > header > div {
   margin-top: 10px;
   margin-left: 10px;
-  width: 88%;
+  margin-right: 20px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -30,4 +31,10 @@ article > header > div {
 
 #username {
   color: gray
+}
+
+.tweet-body {
+  align-self: center;
+  width: 95%;
+  border-bottom: 5px solid gray;
 }
