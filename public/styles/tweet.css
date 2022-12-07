@@ -2,7 +2,7 @@ article.tweet {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  height: 200px;
+  height: 220px;
   width: 90%;
   border: 5px solid grey;
 }
@@ -38,4 +38,23 @@ article > header > div {
   width: 95%;
   padding-bottom: 15px;
   border-bottom: 5px solid gray;
+}
+
+.tweet-footer {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  width: 95%;
+}
+
+.fa-flag {
+  color: #4056A1;
+}
+
+.fa-retweet {
+  color: #4056A1;
+}
+
+.fa-heart {
+  color: #4056A1;
 }
