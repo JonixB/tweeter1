@@ -31,3 +31,7 @@ nav span {
 nav p {
   height: 5px;
 }
+
+.character-exceeded {
+  color: red;
+}
