@@ -36,5 +36,6 @@ article > header > div {
 .tweet-body {
   align-self: center;
   width: 95%;
+  padding-bottom: 15px;
   border-bottom: 5px solid gray;
 }
