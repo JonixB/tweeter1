@@ -1,0 +1,32 @@
+nav {
+  height: 120px;
+  width: 100%;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav span {
+  padding-top: 30px;
+  display: block;
+  font-family: 'bungee';
+  font-size: 40px;
+}
+
+.write-new {
+  display: flex;
+  flex-direction: column;
+}
+
+.fa-angles-down {
+  align-self: center;
+  color: red;
+}
+
+nav p {
+  height: 5px;
+}
