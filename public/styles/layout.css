@@ -20,8 +20,19 @@ body {
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
   display: flex;
+  flex-direction: column;
+  width: 100vw;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin-left: 5%;
+  background-color: #f4f1ec;
+ }
