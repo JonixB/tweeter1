@@ -24,3 +24,22 @@ form {
   background-color: #4056A1;
   color: #FFFFFF;
 }
+
+.error {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  width: 50%;
+  border: 3px solid red;
+  align-self: center;
+  margin: 0 auto;
+  color: red;
+}
+
+.message {
+  margin: 5px;
+}
+
+.fa-circle-exclamation {
+  font-size: 1.5em;
+}
