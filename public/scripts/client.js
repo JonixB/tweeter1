@@ -39,9 +39,7 @@ $(document).ready(function () {
     }
   }
 
-  renderTweets(data);
-
-  $('form').on('submit', function(event){
+  $('form').on('submit', function (event) {
     event.preventDefault();
 
     $.ajax({
@@ -51,20 +49,19 @@ $(document).ready(function () {
     })
   });
 
-  const loadTweets = function() {
+  const loadTweets = function () {
     $.ajax({
       url: '/tweets',
       method: 'GET',
-      data: $(this).serialize()
+    })
 
       .then((data) => {
-
+        renderTweets(data);
       })
 
       .catch((err) => {
-
-      })
-    })
-  }
-
+        
+      });
+  };
+  loadTweets();
 });
