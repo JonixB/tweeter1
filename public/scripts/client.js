@@ -76,14 +76,7 @@ $(document).ready(function () {
       method: 'POST',
       data: $(this).serialize()
     })
-
-    .then((data) => {
-
-    })
-
-    .catch((err) => {
-
-    });
+    
   });
 
 });
