@@ -8,4 +8,5 @@ header.new-tweet {
   background-image: url("../images/asfalt--light.png");
   align-items: center;
   color: white;
+  margin-bottom: 10px;
 }
