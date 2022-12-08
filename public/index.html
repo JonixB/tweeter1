@@ -74,6 +74,13 @@
   <!-- Page-specific (main) content here -->
   <main class="container">
     <section class="new-tweet">
+
+      <div class="error">
+        <i class="fa-solid fa-circle-exclamation"></i>
+        <span class="message">Message</span>
+        <i class="fa-solid fa-circle-exclamation"></i>
+      </div>
+
       <form method="post" action="/tweets/">
         <label for="tweet-text">What are you humming about?</label>
         <textarea name="text" id="tweet-text" rows="2" cols="150"></textarea>
