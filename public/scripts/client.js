@@ -21,7 +21,7 @@ $(document).ready(function () {
         </div>
 
       <footer class="tweet-footer">
-        <h5>${tweetObj.created_at}</h5>
+        <h5>${timeago.format(tweetObj.created_at)}</h5>
 
         <p>
           <i class="fa-solid fa-flag"></i>
