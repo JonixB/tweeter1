@@ -76,7 +76,22 @@ $(document).ready(function () {
       method: 'POST',
       data: $(this).serialize()
     })
-    
   });
+
+  const loadTweets = function() {
+    $.ajax({
+      url: '/tweets',
+      method: 'GET',
+      data: $(this).serialize()
+
+      .then((data) => {
+
+      })
+
+      .catch((err) => {
+
+      });
+    })
+  }
 
 });
