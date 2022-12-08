@@ -68,4 +68,22 @@ $(document).ready(function () {
 
   renderTweets(data);
 
+  $('form').on('submit', function(event){
+    event.preventDefault();
+
+    $.ajax({
+      url: '/tweets/',
+      method: 'POST',
+      data: $(this).serialize()
+    })
+
+    .then((data) => {
+
+    })
+
+    .catch((err) => {
+
+    });
+  });
+
 });
