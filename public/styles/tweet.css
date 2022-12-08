@@ -7,6 +7,10 @@ article.tweet {
   border: 5px solid grey;
 }
 
+article.tweet:hover {
+  box-shadow: 7px 7px 2px 1px rgba(0, 0, 255, .2);
+}
+
 article > header > div {
   margin-top: 10px;
   margin-left: 10px;
@@ -51,10 +55,22 @@ article > header > div {
   color: #4056A1;
 }
 
+.fa-flag:hover {
+  color: #cab000;
+}
+
 .fa-retweet {
   color: #4056A1;
 }
 
+.fa-retweet:hover {
+  color: #cab000;
+}
+
 .fa-heart {
   color: #4056A1;
+}
+
+.fa-heart:hover {
+  color: #cab000;
 }
