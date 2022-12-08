@@ -2,7 +2,7 @@ article.tweet {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  height: 220px;
+  min-height: 220px;
   border: 5px solid grey;
 }
 
@@ -41,8 +41,12 @@ article > header > div {
   width: 95%;
   padding-bottom: 15px;
   border-bottom: 5px solid gray;
+  display: flex;
 }
 
+.tweet-body span {
+  overflow-wrap: anywhere;
+}
 .tweet-footer {
   display: flex;
   justify-content: space-between;
