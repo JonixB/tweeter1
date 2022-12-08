@@ -5,6 +5,9 @@
  */
 
 $(document).ready(function () {
+
+  $(".error").hide();
+
   //escape function to prevent XSS
   const escape = function (str) {
     let div = document.createElement("div");
@@ -50,9 +53,19 @@ $(document).ready(function () {
     event.preventDefault();
 
     if ($("#tweet-text").val().length < 1) {
-      alert("Please enter a tweet");
+      $(".message").text('Cannot post an emtpy tweet. Please type something.')
+      $(".error").slideDown(1000, function () {
+        setTimeout(function () {
+          $('.error').fadeOut('fast');
+        }, 5000);
+      });
     } else if ($("#tweet-text").val().length > 140) {
-      alert("Exceeded maximum number characters allowed");
+      $(".message").text('Exceeded maximum number of characters allowed')
+      $(".error").slideDown(1000, function () {
+        setTimeout(function () {
+          $('.error').fadeOut('fast');
+        }, 5000);
+      });
     } else {
       $.ajax({
         url: '/tweets/',
@@ -60,12 +73,12 @@ $(document).ready(function () {
         data: $(this).serialize()
       })
 
-      .then(() => {
-        loadTweets();
-        $("#tweet-text").val('');
-      })
+        .then(() => {
+          loadTweets();
+          $("#tweet-text").val('');
+        })
     }
-    
+
   });
 
   const loadTweets = function () {
