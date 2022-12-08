@@ -17,7 +17,7 @@ $(document).ready(function () {
       </header>
 
         <div class="tweet-body">
-          ${tweetObj.content.text}
+          <span>${tweetObj.content.text}</span>
         </div>
 
       <footer class="tweet-footer">
@@ -34,6 +34,7 @@ $(document).ready(function () {
   };
 
   const renderTweets = function (tweets) {
+    $('.tweet-container').empty();
     for (const tweet of tweets) {
       $('.tweet-container').prepend(createTweetElement(tweet));
     }
@@ -42,11 +43,22 @@ $(document).ready(function () {
   $('form').on('submit', function (event) {
     event.preventDefault();
 
-    $.ajax({
-      url: '/tweets/',
-      method: 'POST',
-      data: $(this).serialize()
-    })
+    if ($("#tweet-text").val().length < 1) {
+      alert("Please enter a tweet");
+    } else if ($("#tweet-text").val().length > 140) {
+      alert("Exceeded maximum number characters allowed");
+    } else {
+      $.ajax({
+        url: '/tweets/',
+        method: 'POST',
+        data: $(this).serialize()
+      })
+
+      .then(() => {
+        loadTweets();
+      })
+    }
+    
   });
 
   const loadTweets = function () {
@@ -60,7 +72,7 @@ $(document).ready(function () {
       })
 
       .catch((err) => {
-        
+        console.log(err);
       });
   };
   loadTweets();
