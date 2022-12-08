@@ -5,6 +5,12 @@
  */
 
 $(document).ready(function () {
+  //escape function to prevent XSS
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
 
   const createTweetElement = function (tweetObj) {
     const $tweet = $(`<article class="tweet">
@@ -17,7 +23,7 @@ $(document).ready(function () {
       </header>
 
         <div class="tweet-body">
-          <span>${tweetObj.content.text}</span>
+          <span>${escape(tweetObj.content.text)}</span>
         </div>
 
       <footer class="tweet-footer">
