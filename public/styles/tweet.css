@@ -3,7 +3,6 @@ article.tweet {
   display: flex;
   flex-direction: column;
   height: 220px;
-  width: 90%;
   border: 5px solid grey;
 }
 
@@ -73,4 +72,9 @@ article > header > div {
 
 .fa-heart:hover {
   color: #cab000;
+}
+
+.tweet-container {
+  width: 90%;
+  margin: 0 auto;
 }
