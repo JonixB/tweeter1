@@ -35,3 +35,10 @@ nav p {
 .character-exceeded {
   color: red;
 }
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  nav {
+    background-color: transparent;
+  }
+}
