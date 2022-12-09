@@ -2,17 +2,23 @@
 
 Tweeter is a simple, single-page Twitter clone.
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express back-end skills.
+It is one of the projects on our web development journey with Lighthouse labs. Built to practice our HTML, CSS, JS, jQuery and AJAX front-end skills, as well as our Node, Express back-end skills.
 
-## Getting Started
+## Screenshots
+This is the desktop mode/list of tweets
+!["Desktop Mode"](https://github.com/JonixB/tweeter1/blob/master/docs/desktop-mode.png?raw=true)
 
-1. [Create](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) a new repository using this repository as a template.
-2. Clone your repository onto your local device.
-3. Install dependencies using the `npm install` command.
-3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
-4. Go to <http://localhost:8080/> in your browser.
+This is the mobile mode. It is responsive to the size of the viewport.
+!["Desktop Mode"](https://github.com/JonixB/tweeter1/blob/master/docs/mobile-mode.png?raw=true)
 
+The error message that appears if you try to post a tweet that exceeds the number of characters allowed.
+!["Desktop Mode"](https://github.com/JonixB/tweeter1/blob/master/docs/exceed-character.png?raw=true)
+
+The error message that appears if you try to post an empty tweet.
+!["Desktop Mode"](https://github.com/JonixB/tweeter1/blob/master/docs/empty-tweet.png?raw=true)
 ## Dependencies
 
 - Express
 - Node 5.10.x or above
+- chance
+- body-parser
