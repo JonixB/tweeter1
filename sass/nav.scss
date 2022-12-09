@@ -9,34 +9,42 @@ nav {
   justify-content: space-between;
   align-items: center;
   position: fixed;
+
+  span {
+    padding-top: 30px;
+    display: block;
+    font-family: 'bungee';
+    font-size: 40px;
+  }
+
+  p {
+    height: 5px;
+  }
+
+  .write-new {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .fa-angles-down {
+    align-self: center;
+    color: red;
+  }
+
 }
-nav span {
-  padding-top: 30px;
-  display: block;
-  font-family: "bungee";
-  font-size: 40px;
-}
-nav p {
-  height: 5px;
-}
-nav .write-new {
-  display: flex;
-  flex-direction: column;
-}
-nav .fa-angles-down {
-  align-self: center;
-  color: red;
-}
+
+
 
 .character-exceeded {
   color: red;
 }
 
-/* Mobile Styles */
-@media screen and (max-width: 768px) {
+ /* Mobile Styles */
+ @media screen and (max-width: 768px) {
   nav {
     background-color: transparent;
   }
+
   main.container {
     padding-top: 20px;
   }

@@ -11,12 +11,13 @@ header.new-tweet {
   margin-bottom: 10px;
 }
 
-/* Tablet and desktops */
-@media screen and (min-width: 769px) {
+ /* Tablet and desktops */
+ @media screen and (min-width: 769px) {
   body {
     display: flex;
     flex-direction: row;
   }
+
   header.new-tweet {
     margin-top: 150px;
     width: 40%;
@@ -26,6 +27,7 @@ header.new-tweet {
     max-width: 400px;
   }
 }
+
 .container {
   padding-top: 130px;
   max-width: 1400px;

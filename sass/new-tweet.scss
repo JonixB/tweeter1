@@ -9,9 +9,9 @@ form {
   border-bottom: 5px solid gray;
   background-color: transparent;
   resize: none;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   display: block;
-  width: 100%;
+  width: 100%; 
   max-width: 100%;
 }
 
@@ -23,7 +23,7 @@ section.new-tweet {
   margin-top: 10px;
   display: flex;
   justify-content: space-between;
-  font-family: "bungee";
+  font-family: 'bungee';
 }
 
 #button {
@@ -41,10 +41,13 @@ section.new-tweet {
   align-self: center;
   margin: 0 auto;
   color: red;
+
+  .message {
+    margin: 5px;
+  }
+
+  .fa-circle-exclamation {
+    font-size: 1.5em;
+  }
 }
-.error .message {
-  margin: 5px;
-}
-.error .fa-circle-exclamation {
-  font-size: 1.5em;
-}
+
