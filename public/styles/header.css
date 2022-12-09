@@ -10,3 +10,23 @@ header.new-tweet {
   color: white;
   margin-bottom: 10px;
 }
+
+ /* Tablet and desktops */
+ @media screen and (min-width: 769px) {
+  body {
+    display: flex;
+    flex-direction: row;
+  }
+
+  header.new-tweet {
+    margin-top: 150px;
+    width: 40%;
+    margin-left: 2rem;
+    padding-top: 20px;
+    height: 400px;
+  }
+}
+
+.container {
+  padding-top: 130px;
+}
