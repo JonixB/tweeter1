@@ -41,4 +41,8 @@ nav p {
   nav {
     background-color: transparent;
   }
+
+  main.container {
+    padding-top: 20px;
+  }
 }
