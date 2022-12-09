@@ -26,10 +26,26 @@ nav .write-new {
 nav .fa-angles-down {
   align-self: center;
   color: red;
+  position: relative;
+  animation: updown 2s ease infinite;
 }
 
 .character-exceeded {
   color: red;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 /* Mobile Styles */
