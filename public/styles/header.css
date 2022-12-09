@@ -24,9 +24,11 @@ header.new-tweet {
     margin-left: 2rem;
     padding-top: 20px;
     height: 400px;
+    max-width: 400px;
   }
 }
 
 .container {
   padding-top: 130px;
+  max-width: 1300px;
 }
